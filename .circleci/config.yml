@@ -4,7 +4,7 @@ executors:
     environment:
       PROJECT_NAME: projet1-team-10
     docker:
-      - image: circleci/buildpack-deps:alpine
+      - image: circleci/buildpack-deps:stretch
 
 
 jobs:
