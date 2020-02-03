@@ -25,5 +25,5 @@ jobs:
       - run:
           name: Publish Node Image to Docker Hub
           command: |
-           echo $PSW | base64 --decode | docker login -u $USER --password-stdin
+           echo $DOCKER_PASSWORD | base64 --decode | docker login -u $DOCKER_USER --password-stdin
            docker push florianarmenoult/team1-projet-10:latest
