@@ -46,6 +46,7 @@ services:
             - network-database
     
     redis:
+        container_name: redis
         image: redis:alpine
         restart: always
         hostname: redis
