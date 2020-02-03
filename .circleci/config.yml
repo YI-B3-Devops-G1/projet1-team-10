@@ -1,6 +1,6 @@
 version: 2.1
 executors:
-  mypublisher:
+  lebourreau:
     environment:
       PROJECT_NAME: projet1-team-10
     docker:
