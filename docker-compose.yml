@@ -12,6 +12,7 @@ services:
         hostname: webserver
         depends_on:
             - api
+            - redis
         networks:
             - network-web
     api:
