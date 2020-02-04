@@ -24,10 +24,10 @@ jobs:
           command: docker images -a
       - run:
           name: Save nodejs Docker image
-          command: docker save -o ./api.tar api
+          command: docker save -o ./team1-projet-10.tar project_api project_webserver
       - run:
           name: Tag docker image
-          command: docker tag api florianarmenoult/team1-projet-10:latest
+          command: docker tag team1-projet-10 florianarmenoult/team1-projet-10:latest
       - run:
           name: Publish Node Image to Docker Hub
           command: |
