@@ -20,6 +20,9 @@ jobs:
           name: test
           command: echo 'Hello there' && echo 'General Kenobi, you are a bold one'
       - run:
+          name: List images
+          command: docker images -a
+      - run:
           name: Save nodejs Docker image
           command: docker save -o ./api.tar api
       - run:
