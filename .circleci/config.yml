@@ -21,10 +21,10 @@ jobs:
           command: echo 'Hello there' && echo 'General Kenobi, you are a bold one'
       - run:
           name: Save nodejs Docker image
-          command: docker save -o ./project_webserver.tar project_api project_webserver
+          command: docker save -o ./project_api.tar project_api project_api
       - run:
           name: Tag docker image
-          command: docker tag project_webserver florianarmenoult/team1-projet-10:latest
+          command: docker tag project_api florianarmenoult/team1-projet-10:latest
       - run:
           name: List images
           command: docker images -a
