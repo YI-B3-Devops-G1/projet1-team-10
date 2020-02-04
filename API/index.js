@@ -1,12 +1,12 @@
 'use strict';
 
 const express = require('express');
-const redis = require('redis');
+// const redis = require('redis');
 
 // Constants
 const PORT = 3000;
 const HOST = '0.0.0.0';
-const client = redis.createClient({ host: process.env.REDIS_HOST });
+// const client = redis.createClient({ host: process.env.REDIS_HOST });
 
 // App
 const app = express();
@@ -23,7 +23,7 @@ app.get('/status', async (req, res) => {
   res.send(JSON.stringify({
     status: "OK",
     postgresUptime: pg_uptime,
-    redisConnectedClients: Number(client.server_info.connected_clients)
+    // redisConnectedClients: Number(client.server_info.connected_clients)
   }));
 });
 
