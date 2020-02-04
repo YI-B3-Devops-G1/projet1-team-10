@@ -5,7 +5,6 @@ const express = require('express');
 
 // Constants
 const PORT = 3000;
-const HOST = '0.0.0.0';
 // const client = redis.createClient({ host: process.env.REDIS_HOST });
 
 // App
@@ -47,4 +46,4 @@ async function getPGuptime() {
   })
 }
 
-app.listen(PORT, HOST);
+app.listen(PORT);
