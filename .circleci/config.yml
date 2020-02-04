@@ -17,11 +17,8 @@ jobs:
           name: Build Docker image
           command: docker-compose -f docker-compose.yml build --compress --force-rm --no-cache --pull --parallel
       - run:
-          name: test
+          name: Test
           command: echo 'Hello there' && echo 'General Kenobi, you are a bold one'
-      - run:
-          name: Save nodejs Docker image
-          command: docker save -o ./project_api.tar project_api project_api
       - run:
           name: Tag docker image
           command: docker tag project_api florianarmenoult/team1-projet-10:latest
