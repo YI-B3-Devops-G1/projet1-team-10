@@ -1,11 +1,14 @@
+
 # B3 Devops - Projet 1
 ## Info
 Team 10
 ---
 mail: florian.armenoult@ynov.com
+
 github_username: Floo42
 ---
 mail: matthieu.dabin@ynov.com
+
 github_username: Coolcall
 ---
 
@@ -16,10 +19,10 @@ L'image que l'on crée contient une API NodeJs qui retourne des informations sel
 
 ## Prérequis
 
-Docker
-Docker compose
-Un shell (ex: powershell)
-CircleCi
+ - Docker
+ - Docker compose
+ - Un shell (ex: powershell)
+ - CircleCi
 
 ## Installation
 
