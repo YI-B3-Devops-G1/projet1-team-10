@@ -59,3 +59,9 @@ Pour lancer le projet en entier on utilise la commande :
 ## Liens
 
 DockerHub : https://hub.docker.com/r/florianarmenoult/projet1-team-10
+
+## WebHook Discord
+
+On peut utiliser la fonction WebHook de CircleCI sur Discord, pour se faire il faut rajouter /slack à la fin du lien du webhook discord
+
+Exemple de résultat : ![Resultat webhook discord](https://i.imgur.com/keegUQU.png)
