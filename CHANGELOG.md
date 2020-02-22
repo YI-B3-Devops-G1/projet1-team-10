@@ -6,7 +6,7 @@ Tous les changements notables seront inscrits dans ce document.
 ### Mise à jour
 
 Ajout de workflow pour la branche master
-Ajout Webhook discord
+Ajout Webhook discord (via Slack)
 
 ## [1.0.0] - 04/02/2020
 ### Mise à jour
