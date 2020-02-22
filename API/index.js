@@ -5,7 +5,9 @@ const redis = require('redis');
 
 // Constants
 const PORT = 3000;
-const client = redis.createClient({ host: process.env.REDIS_HOST });
+const client = redis.createClient({
+  host: process.env.REDIS_HOST
+});
 
 // App
 const app = express();
