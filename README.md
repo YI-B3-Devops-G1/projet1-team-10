@@ -56,3 +56,5 @@ Pour lancer le projet en entier on utilise la commande :
 ## Liens
 
 DockerHub : https://hub.docker.com/r/florianarmenoult/projet1-team-10
+
+### Test push develop -> n'est pas mis en ligne sur DockerHub
