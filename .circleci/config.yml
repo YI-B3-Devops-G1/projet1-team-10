@@ -47,7 +47,7 @@ jobs:
           command: docker images -a
       - run:
           name: Rename nodejs image
-          command: docker tag projet1-team-10 florianarmenoult/projet1-team-10:latest
+          command: docker tag project_api florianarmenoult/projet1-team-10:latest
       - run:
           name: Publish Node Image to Docker Hub
           command: |
