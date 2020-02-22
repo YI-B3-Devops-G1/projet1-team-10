@@ -27,7 +27,7 @@ jobs:
           command: docker images -a
       - run:
           name: Save nodejs Docker image
-          command: docker save -o ./projet1-team-10_api.tar projet1-team-10
+          command: docker save -o ./projet1-team-10_api.tar project_api
       - persist_to_workspace:
           root: .
           paths:
