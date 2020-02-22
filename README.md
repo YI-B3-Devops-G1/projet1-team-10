@@ -1,3 +1,4 @@
+
 # B3 Devops - Projet 1
 
 Team 10
@@ -50,11 +51,16 @@ Pour lancer le projet en entier on utilise la commande :
 
 ## CircleCi
 
+CircleCI permet de faire de l'intégration continu via les commits sur GitHub.
+**Notre configuration ne déclenche cette procédure que lors de commits sur la branche Master.**
+
 `docker-compose -f docker-compose.yml build --compress --force-rm --no-cache --pull --parallel` : build de l'image
 
 `docker tag project_api florianarmenoult/projet1-team-10:latest` : renommage de l'image
 
 `echo $DOCKER_PASSWORD | base64 --decode | docker login -u $DOCKER_USER --password-stdin docker push florianarmenoult/projet1-team-10:latest` : Publication de l'image sur Dockerhub
+
+
 
 ## Liens
 
